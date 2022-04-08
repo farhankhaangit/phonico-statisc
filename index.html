@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <!-- page css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- page css -->
+    <link rel="stylesheet" href="css/index.css">
+    <title>Phonico</title>
+</head>
+<body>
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-light bg-light navbar-expand-lg bg-light">
+        <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #FFF7F4;">
+            <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.png" alt=""></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="#">Plans</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle fw-bold" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                            <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="my_btn my_btn_colored mx-1">Signup</button>
+                    <button class="my_btn mx-1 my_btn_black">Login <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <!-- landing -->
+
+    <section class="landing pb-0 pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="text_side bg_spot position-relative">
+                        <p><img src="images/line.png" alt=""> Best Coverage on Fastest Network</p>
+                        <h1 class="mb-0">Phonico is here to connect you to the world</h1>
+                        <img src="images/line-green.png" alt="">
+                        <p class="my-4">Our main goal is to help our customer and partners accelerate development and excelerate deployment of their services.</p>
+                        <button class="my_btn mx-1 my_btn_black">Get Started <img src="images/rocket.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <img src="images/hero image.png" alt="landing image" class="img-fluid d-block mx-auto">
+                        <div class="review_box">
+                            <div class="d-flex mb-1 justify-content-around">
+                                <div class="">
+                                    <img src="images/review.png" alt="" class="img-fluid rounded-circle" width="50px" height="50px">
+                                </div>
+                                <div class="px-2">
+                                    <h4 class="mb-0">John L. Ray</h4>
+                                    <p class="mb-0">California, America</p>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="mb-0">
+                                    <img src="images/Star 5.png" alt="">
+                                    <img src="images/Star 5.png" alt="">
+                                    <img src="images/Star 5.png" alt="">
+                                    <img src="images/Star 5.png" alt="">
+                                    <img src="images/Star 5.png" alt="">
+                                    <span class="ms-3" style="font-size: 0.8rem;">5.0 (4 Reviews)</span> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- features -->
+
+    <section class="featuers py-5" style="background: #FFF7F4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="text-center">
+                        <img src="images/fast-and-easy.png" alt="fast-and-easy" class="img-fluid">
+                        <h5 class="py-4">Fast & Easy</h5>
+                        <p class="px-lg-5">Lorem Ipsum is simply dummy text of the printing </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="text-center">
+                        <img src="images/reliable.png" alt="reliable" class="img-fluid">
+                        <h5 class="py-4">Reliable</h5>
+                        <p class="px-lg-5">Lorem Ipsum is simply dummy text of the printing </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="text-center">
+                        <img src="images/switch.png" alt="Switch Easily" class="img-fluid">
+                        <h5 class="py-4">Switch Easily</h5>
+                        <p class="px-lg-5">Lorem Ipsum is simply dummy text of the printing </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="text-center">
+                        <img src="images/secure.png" alt="secure" class="img-fluid">
+                        <h5 class="py-4">Secure</h5>
+                        <p class="px-lg-5">Lorem Ipsum is simply dummy text of the printing </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- coverage -->
+
+    <section class="coverage py-5">
+        <div class="container">
+            <div class="text-center">
+                <p><img src="images/line.png" alt="sdgsf"> Check Our Coverage</p>
+                <h2 class="w-75 mx-auto">
+                    You get supreme wireless service on 
+                    the most reliable SG network but for way less than 
+                    what other wireless service providers charge.
+                </h2>
+                <img src="images/line-red.png" alt="">
+                <div class="fade_box p-4 p-sm-5 text-center my-5">
+                    <h2>Nationwide Coverage for Less</h2>
+                    <p>Check the coverage in your area</p>
+                    <div>
+                        <button class="my_btn my_btn_white mx-2"><img src="images/Location_Slim.png" alt=""> Zip Code</button>
+                        <button class="my_btn my_btn_colored mx-2">Let’s Go</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- plans -->
+
+    <section class="plans pt-5 pb-3" style="background: #FFF7F4;">
+        <div class="container text-center">
+            <p><img src="images/line.png" alt="sdgsf"> Our Pricing Plan</p>
+            <h1>We’ve got prepaid plans <br> for everyone</h1>
+            <img src="images/line-red.png" alt="" class="">
+            <div class="plan_cards mt-5">
+                <div style="width: 280px; margin-bottom: 20px;">
+                    <div class="caard">
+                        <div class="p-3 mb-1">
+                            <div id="first_prog" class="w-100 h-100"></div>
+                        </div>
+                        <h6>5G-4G LTE DATA</h6>
+                        <p class="my-4">Price <strong style="font-size: 1.5rem;">$35</strong> /Month</p>
+                        <ul>
+                            <li>Unlimited text and talk</li>
+                            <li>Nationwide coverage</li>
+                        </ul>
+                        <button class="my_btn my_btn_colored my_btn_round">Get Started</button>
+                    </div>
+                </div>
+                <div style="width: 280px; margin-bottom: 20px;">
+                    <div class="caard">
+                        <div class="p-3 mb-1">
+                            <div id="scnd_prog" class="w-100 h-100"></div>
+                        </div>
+                        <h6>5G-4G LTE DATA</h6>
+                        <p class="my-4">Price <strong style="font-size: 1.5rem;">$35</strong> /Month</p>
+                        <ul>
+                            <li>Unlimited text and talk</li>
+                            <li>Nationwide coverage</li>
+                        </ul>
+                        <button class="my_btn my_btn_colored my_btn_round">Get Started</button>
+                    </div>
+                </div>
+                <div style="width: 280px; margin-bottom: 20px;">
+                    <div class="caard">
+                        <div class="p-3 mb-1">
+                            <div id="third_prog" class="w-100 h-100"></div>
+                        </div>
+                        <h6>5G-4G LTE DATA</h6>
+                        <p class="my-4">Price <strong style="font-size: 1.5rem;">$35</strong> /Month</p>
+                        <ul>
+                            <li>Unlimited text and talk</li>
+                            <li>Nationwide coverage</li>
+                        </ul>
+                        <button class="my_btn my_btn_colored my_btn_round">Get Started</button>
+                    </div>
+                </div>
+                <div style="width: 280px; margin-bottom: 20px;">
+                    <div class="caard">
+                        <div class="p-3 mb-1">
+                            <div id="forth_prog" class="w-100 h-100"></div>
+                        </div>
+                        <h6>5G-4G LTE DATA</h6>
+                        <p class="my-4">Price <strong style="font-size: 1.5rem;">$35</strong> /Month</p>
+                        <ul>
+                            <li>Unlimited text and talk</li>
+                            <li>Nationwide coverage</li>
+                        </ul>
+                        <button class="my_btn my_btn_colored my_btn_round">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- plan options -->
+
+    <section class="options py-5">
+        <div class="container">
+            <h5>Plan options include:</h5>
+            <div class="row my-5">
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/support.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            World Class Customer Support
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/contracts.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            No Contracts / No Credit Checks
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/friends.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            Refer Friends and Earn Free Service
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/rates.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            Low Overage Rates
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/device.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            Bring Your Own Device
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/network.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            All Major Carrier Networks Supported
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/portal.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            Online Management Portal
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-xl-3 mb-3">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex align-items-center">
+                            <img src="images/secure2.png" alt="customer-support" class="img-fluid">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            Secure
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- usage -->
+
+    <section class="usage py-5" style="background: #FFF7F4;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="text_side">
+                        <p><img src="images/line.png" alt=""> Gain a Success With Us</p>
+                        <h1 class="mb-0">Are You Sick of Paying Excess Usage?</h1>
+                        <img src="images/line-green.png" alt="">
+                        <h5 class="py-3">Here at Phonico, we do not believe in excess usage</h5>
+                        <p class="mb-3">We believe you should be on the right plan for the amount of data you need. With our managed services and specialised scripts, our team of Customer Service Managers will pro-actively get in touch with you when you are going over your data pool and provide advice on the best way to manage that extra data. This way, you only pay for the plans you need and can avoid bill shock.</p>
+                        <button class="my_btn mx-1 my_btn_black">Learn More ></button>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images/gain a succes with us.png" alt="landing image" class="img-fluid d-block mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- goals -->
+
+    <section class="goal py-5">
+        <div class="container">
+            <div class="w-75">
+                <p><img src="images/line.png" alt=""> What We Do</p>
+                <h2>Our main goal is to help our customer and partners accelerate development and excelerate deployment of their services.</h2>
+                <img src="images/line-green.png" alt="">
+            </div>
+            <div class="row my-5">
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">01</h5>
+                        <p class="w-75">Grab Half Year Wireless Service Free</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">02</h5>
+                        <p class="w-75">When you buy a new phone and a half-year plan.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">03</h5>
+                        <p class="w-75">Free SG seamless experience</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">04</h5>
+                        <p class="w-75">Unlimited Wi-Fi calling and hotspot</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">05</h5>
+                        <p class="w-75">A whole new experience of 4g and Sg</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">06</h5>
+                        <p class="w-75">Industry leading M2M Control Center</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">07</h5>
+                        <p class="w-75">M2M Wireless IP Networking</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-3">
+                    <div class="px-3 pt-3 brdr">
+                        <h5 class="my-3" style="color: #EF5E7F">08</h5>
+                        <p class="w-75">Advice and Consultancy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="my_btn my_btn_colored px-5 py-2">Get Started</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- stats -->
+
+    <section class="stats py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 mb-2">
+                    <div class="d-flex">
+                        <div class="p-2 d-flex align-items-center"><h1>5k</h1></div>
+                        <div class="p-2 d-flex align-items-center">Devices<br>Connected</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-2">
+                    <div class="d-flex">
+                        <div class="p-2 d-flex align-items-center"><h1>50+</h1></div>
+                        <div class="p-2 d-flex align-items-center">Projects<br>Finished</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-2">
+                    <div class="d-flex">
+                        <div class="p-2 d-flex align-items-center"><h1>100+</h1></div>
+                        <div class="p-2 d-flex align-items-center">Business<br>Solutions</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 mb-2">
+                    <div class="d-flex">
+                        <div class="p-2 d-flex align-items-center"><h1>1+</h1></div>
+                        <div class="p-2 d-flex align-items-center">Terabytes<br>of Data</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- solutions -->
+
+    <section class="solution py-5">
+        <div class="container">
+            <div class="text-center mt-5">
+                <p><img src="images/line.png" alt=""> Explore Our Solutions</p>
+                <h2>M2M & IoT Industry Solutions</h2>
+                <img src="images/line-green.png" alt="">
+            </div>
+            <div class="row my-5">
+                <div class="col-md-4 mb-3 d-flex align-items-center justify-content-center">
+                    <div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/business.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Business Continuity & Failover</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/transport.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Transport, Telematics & Logistics</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/management.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Remote Management & SCADA</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/digital.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Digital Media & Signage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 d-flex align-items-center justify-content-center">
+                    <img src="images/Mobile image.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-3 d-flex align-items-center justify-content-center">
+                    <div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/payment.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Payments & POS</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/envirment.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Environmental Monitoring</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/utitlity.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Smart Utilities and security</p>
+                            </div>
+                        </div>
+                        <div class="d-flex py-1 py-lg-3 brdr2">
+                            <div class="p-2 d-flex align-items-center">
+                                <img src="images/medical.png" alt="" class="img-fluid d-block mx-auto">
+                            </div>
+                            <div class="p-2 d-flex align-items-center">
+                                <p class="mb-0">Medical & Patient Monitoring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ild -->
+
+    <section class="ild py-5">
+        <div class="container">
+            <div class="text-center text-white">
+                <p><img src="images/Line2.png" alt=""> International Rates</p>
+                <h2>International long distance Integrated ILD</h2>
+                <img src="images/line-white.png" alt="">
+            </div>
+            <div class="p-5 d-flex justify-content-evenly bg-white bg-opacity-50 rounded mt-5 flex-wrap">
+                <div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                </div>
+                <div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                </div>
+                <div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                    <div class="py-2 px-3 rounded bg-white d-flex align-items-center mb-3">
+                        <img src="images/flag.png" alt="" class="img-fluid mx-2"><h5 class="mx-2">Australia  $0.0092</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- connect -->
+
+    <section class="connect py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 d-flex align-items-center mb-2">
+                    <div class="">
+                        <p><img src="images/line.png" alt=""> Gain a Success With Us</p>
+                        <h1 class="mb-3">Like what you see? Click the button below to start connecting with Phonico Mobile.</h1>
+                        <button class="my_btn mx-1 my_btn_black">Learn More ></button>
+                    </div>
+                </div>
+                <div class="col-md-7 text-center">
+                    <img src="images/connect.png" alt="connect image" class="img-fluid d-block mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testi -->
+
+    <section class="testi py-5" style="background-color: #FFF7F4;">
+        <div class="container">
+            <div class="text-center mt-5">
+                <p><img src="images/line.png" alt=""> Testimonial</p>
+                <h2>What People Say About <br> Phonico</h2>
+                <img src="images/line-green.png" alt="">
+            </div>
+            <div class="mt-5 d-flex justify-content-around flex-wrap">
+                <div class="caard mb-3">
+                    <div class="d-flex mb-3 justify-content-around">
+                        <div class="">
+                            <img src="images/review.png" alt="" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="px-2">
+                            <h4 class="mb-0">John L. Ray</h4>
+                            <p class="mb-0" style="color: #EF5E7F;">California, America</p>
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <p>Ultimate Mobile is a great cheap cell phone plan: The unlimited global plan is one of the best – Mexico calling is included</p>
+                    </div>
+                </div>
+                <div class="caard mb-3">
+                    <div class="d-flex mb-3 justify-content-around">
+                        <div class="">
+                            <img src="images/review.png" alt="" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="px-2">
+                            <h4 class="mb-0">John L. Ray</h4>
+                            <p class="mb-0" style="color: #EF5E7F;">California, America</p>
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <p>Ultimate Mobile is a great cheap cell phone plan: The unlimited global plan is one of the best – Mexico calling is included</p>
+                    </div>
+                </div>
+                <div class="caard mb-3">
+                    <div class="d-flex mb-3 justify-content-around">
+                        <div class="">
+                            <img src="images/review.png" alt="" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="px-2">
+                            <h4 class="mb-0">John L. Ray</h4>
+                            <p class="mb-0" style="color: #EF5E7F;">California, America</p>
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                            <img src="images/Star 5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <p>Ultimate Mobile is a great cheap cell phone plan: The unlimited global plan is one of the best – Mexico calling is included</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- email -->
+
+    <section class="email py-5">
+        <div class="container">
+            <div class="row px-5 py-3 mt-5" style="border-radius: 1.5rem; background-color: #FFF7F4;">
+                <div class="col-md-5">
+                    <div class="w-100 text-center">
+                        <img src="images/model.png" alt="model" class="img-fluid" style="max-height: 300px;">
+                    </div>
+                </div>
+                <div class="col-md-7 d-flex align-items-center">
+                    <div class="w-75">
+                        <h2>Get started with Phonico</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and Ipsum has been the industry's standard </p>
+                        <div class="position-relative">
+                            <input type="text" placeholder="Enter Your Email">
+                            <button class="my_btn my_btn_colored my_btn_round">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background-color: #0C1B33" class="pt-5 pb-3">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-sm-6">
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <img src="images/headphone.png" alt="" class="mx-2">
+                        <div class="mx-2">
+                            <p class="mb-0" style="color: #FAB094;">We love taking your call</p>
+                            <a href="tel:08002345544" class="text-white"><h3>08002345544 </h3></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="d-flex justify-content-center align-items-center mb-3">
+                        <img src="images/mail.png" alt="" class="mx-2">
+                        <div class="mx-2">
+                            <p style="color: #FAB094;" class="mb-0">Drop a message</p>
+                            <a href="mailto:info@phonico.com" class="text-white"><h3 class="text-white">info@phonico.com </h3></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 text-white">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3">
+                        <h4>About Us</h4>
+                        <div class="mt-5">
+                            <p>Phonico Mobile, we have built a company with a mindset biased for action, innovation and constant change. Our goal – to come out with market shaping services that are relevant to the needs of our customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3">
+                        <h4>Openining Hours</h4>
+                        <div class="mt-5">
+                            <p class="mb-0">Monday to satureday</p>
+                            <p style="color: #FAB094;">10 am- 2pm EST</p>
+                            <h6>Sunday OFFDAY</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3">
+                        <h4>Quick Link</h4>
+                        <div class="mt-5">
+                            <p class="mb-0"><a href="">Home</a></p>
+                            <p class="mb-0"><a href="">Get Connected</a></p>
+                            <p class="mb-0"><a href="">FAQ</a></p>
+                            <p class="mb-0"><a href="">Terms of use</a></p>
+                            <p class="mb-0"><a href="">Quick Top-Up</a></p>
+                            <p class="mb-0"><a href="">Market Place</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="p-3">
+                        <h4>Social</h4>
+                        <div class="mt-5">
+                            <a href="" class="me-4"><img src="images/facebook.svg" alt=""></a>
+                            <a href="" class="me-4"><img src="images/twitter.svg" alt=""></a>
+                            <a href="" class="me-4"><img src="images/instagram.svg" alt=""></a>
+                            <a href="" class=""><img src="images/linkedin.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <h5 class="text-white opacity-50">Phonico © 2022. All Rights Reserved</h5>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- bootstrap javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!-- progress bar cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.0/progressbar.js" integrity="sha512-5IpLUbqlmXPB1IBI0TN9iNnokMYTLpNrA51lbvI3B7+qeHORt8OJnYaSST8ymGTE8kcdm9oVEIh06mj/E0c9yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/progress.js"></script>
+</html>

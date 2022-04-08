@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+* {
+    font-family: 'Manrope', sans-serif;
+    transition: .3s ease all;
+}
+
+/*--------------------------------------global csss---------------------------------*/
+
+.my_btn{
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.my_btn_colored{
+    background: linear-gradient(to right,#EF5E7F,#FAB094);
+    color: white;
+}
+.my_btn_black{
+    background-color: #0C1B33;
+    color: white;
+}
+.my_btn_round{
+    border-radius: 30px !important;
+}
+.my_btn_colored:hover{
+    background: linear-gradient(to right,#FAB094,#EF5E7F);
+}
+.my_btn_black:hover{
+    background-color: #495867;
+}
+.bg_spot::before{
+    content: '';
+    box-shadow: 0px 0px 130px 100px rgba(239, 94, 128, 0.459);
+    position: absolute;
+    top: -10px;
+    left: -90px;
+}
+.my_btn_white{
+    background: rgb(255, 255, 255);
+}
+.my_btn_white:hover{
+    background-color: #0C1B33;
+    color: white;
+}
+.caard{
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+.caard ul{
+    list-style-image: url('../images/check-green.png');
+}
+
+/*-----------------------------------coverage-------------------------------*/
+
+
+.review_box{
+    width: 250px;
+    background-color: #fff7f4d5;
+    padding: 15px;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 130px;
+    left: 30px;
+}
+@media only screen and (max-width: 1200px) {
+    .review_box{
+        bottom: 80px;
+    }
+}
+@media only screen and (max-width: 993px) {
+    .review_box{
+        bottom: 50px;
+        left: 0px;
+    }
+}
+
+
+
+
+
+.coverage .fade_box{
+    background: rgba(238, 238, 238, 0.445);
+    width: 50%;
+    margin: auto;
+    border-radius: 1rem;
+    position: relative;
+}
+.fade_box::before{
+    content: '';
+    box-shadow: 0px 0px 100px 80px #FAB094;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    z-index: -1;
+}
+.fade_box::after{
+    content: '';
+    box-shadow: 0px 0px 100px 80px #60CC96;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    z-index: -1;
+}
+
+/*-----------------------------------coverage-------------------------------*/
+
+.plans {
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+.plan_cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.brdr{
+    border-top: 0.1rem solid rgb(224, 224, 224);
+}
+
+
+.stats{
+    background-color: #0C1B33; 
+    color: white;
+    background-image: url('../images/line\ stoke.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+} 
+.ild{
+    background-image: url('../images/ild-bg.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+
+
+
+
+
+.testi .caard{
+    width: 350px;
+}
+
+
+.email input{
+    border: none;
+    background-color: white;
+    padding: 0.8rem 9rem 0.8rem 2rem;
+    border-radius: 2rem;
+    width: 100%;
+}
+.email input:focus{
+    outline: none;
+}
+.email .my_btn{
+    position: absolute;
+    top: 5px;
+    right: 6px;
+}
+
+
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .email .w-75 {
+      width: 100% !important;
+    }
+    .coverage .fade_box{
+        width: 80%;
+    }
+    .goal p.w-75{
+        width: 100% !important;
+    }
+    .testi .caard{
+        width: 320px;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .coverage .fade_box{
+        width: 100%;
+    }
+    .testi .caard{
+        width: 300px;
+    }
+  }
